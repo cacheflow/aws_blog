@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
   database: ENV["RDS_DATABASE"]
   encoding: unicode
   pool: 10 
