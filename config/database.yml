@@ -80,6 +80,9 @@ test:
 #
 production:
   <<: *default
-  database: aws_blog_production
-  username: aws_blog
-  password: <%= ENV['AWS_BLOG_DATABASE_PASSWORD'] %>
+  database: ENV["RDS_DATABASE"]
+  encoding: unicode
+  pool: 10 
+  username: ENV["RDS_USERNAME"]
+  password: ENV["RDS_PASSWORD"]
+  host: aws.ckzsm2qqwqog.us-west-2.rds.amazonaws.com:5432
