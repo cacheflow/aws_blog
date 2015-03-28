@@ -86,4 +86,4 @@ production:
   pool: 10 
   username: ENV["RDS_USERNAME"]
   password: ENV["RDS_PASSWORD"]
-  host: aws.ckzsm2qqwqog.us-west-2.rds.amazonaws.com:5432
+  host: aws.ckzsm2qqwqog.us-west-2.rds.amazonaws.com
