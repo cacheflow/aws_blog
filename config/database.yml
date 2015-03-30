@@ -84,6 +84,7 @@ production:
   database: ENV["RDS_DATABASE"]
   encoding: unicode
   pool: 5 
-  username: ENV["RDS_DATABASE_NAME"]
+  username: ENV["RDS_USERNAME"]
   password: ENV["RDS_PASSWORD"]
   host: ENV["HOST"]
+  port: ENV["PORT"]
