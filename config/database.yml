@@ -81,9 +81,9 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  database: ENV["RDS_DATABASE"]
+  database: aws_database
   encoding: unicode
-  pool: 10 
-  username: ENV["RDS_USERNAME"]
+  pool: 5 
+  username: aws
   password: ENV["RDS_PASSWORD"]
   host: aws.ckzsm2qqwqog.us-west-2.rds.amazonaws.com
