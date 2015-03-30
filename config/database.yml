@@ -81,9 +81,9 @@ test:
 production:
   <<: *default
   adapter: postgresql
-  database: aws_database
+  database: ENV["PARAM3"]
   encoding: unicode
   pool: 5 
-  username: aws
-  password: ENV["RDS_PASSWORD"]
+  username: ENV["PARAM2"]
+  password: ENV['PARAM1']
   host: aws.ckzsm2qqwqog.us-west-2.rds.amazonaws.com
